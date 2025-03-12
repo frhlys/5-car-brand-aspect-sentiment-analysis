@@ -1,6 +1,5 @@
 # 5-car-brand-aspect-sentiment-analysis
 
-FARAH ALYSA BINTI AZIZAN 
 Classifying and Visualizing Sentiments of Automobile Brand Reviews using Naive Bayes
 
 
@@ -15,7 +14,7 @@ Classifying and Visualizing Sentiments of Automobile Brand Reviews using Naive B
 How to Use / Setup / Link the System / Prototype / Database / Raw Data
 
 1. Download and Extract
-FARAH ALYSA BINTI AZIZAN System.zip file.
+System.zip file.
 Extract the contents to your preferred directory.
 
 2. Open the System
