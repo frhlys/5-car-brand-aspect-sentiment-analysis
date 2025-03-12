@@ -15,7 +15,7 @@ Classifying and Visualizing Sentiments of Automobile Brand Reviews using Naive B
 How to Use / Setup / Link the System / Prototype / Database / Raw Data
 
 1. Download and Extract
-Download the [2502-CDCS230] 2023149217 (05) FARAH ALYSA BINTI AZIZAN System.zip file.
+FARAH ALYSA BINTI AZIZAN System.zip file.
 Extract the contents to your preferred directory.
 
 2. Open the System
