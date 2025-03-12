@@ -1,6 +1,6 @@
 # 5-car-brand-aspect-sentiment-analysis
 
-[2502-CDCS230] 2023149217(06) FARAH ALYSA BINTI AZIZAN 
+FARAH ALYSA BINTI AZIZAN 
 Classifying and Visualizing Sentiments of Automobile Brand Reviews using Naive Bayes
 
 
