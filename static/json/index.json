@@ -1,0 +1,155 @@
+{
+    "sentiment": {
+      "1.0": 27916,
+      "-1.0": 9688,
+      "0.0": 6097
+    },
+    "brandMentions": {
+      "BMW": 11105,
+      "Mercedes-Benz": 10599,
+      "Audi": 8077,
+      "Lexus": 8074,
+      "INFINITI": 5846
+    },
+    "aspectMentions": {
+      "comfort": 14588,
+      "performance": 11579,
+      "quality": 6490,
+      "price": 4681,
+      "fuel efficiency": 3534,
+      "safety": 2829
+    },
+    "brandAspects": {
+      "Audi": {
+        "comfort": 2391,
+        "fuel efficiency": 691,
+        "performance": 2323,
+        "price": 980,
+        "quality": 1253,
+        "safety": 439
+      },
+      "BMW": {
+        "comfort": 3852,
+        "fuel efficiency": 892,
+        "performance": 3005,
+        "price": 1124,
+        "quality": 1543,
+        "safety": 689
+      },
+      "INFINITI": {
+        "comfort": 2035,
+        "fuel efficiency": 446,
+        "performance": 1367,
+        "price": 594,
+        "quality": 924,
+        "safety": 480
+      },
+      "Lexus": {
+        "comfort": 2843,
+        "fuel efficiency": 682,
+        "performance": 1829,
+        "price": 907,
+        "quality": 1358,
+        "safety": 455
+      },
+      "Mercedes-Benz": {
+        "comfort": 3467,
+        "fuel efficiency": 823,
+        "performance": 3055,
+        "price": 1076,
+        "quality": 1412,
+        "safety": 766
+      }
+    },
+    "brandSentiments": {
+      "Audi": {
+        "1.0": 5296,
+        "0.0": 1016,
+        "-1.0": 1765
+      },
+      "BMW": {
+        "1.0": 7031,
+        "0.0": 1550,
+        "-1.0": 2524
+      },
+      "INFINITI": {
+        "1.0": 4040,
+        "0.0": 648,
+        "-1.0": 1158
+      },
+      "Lexus": {
+        "1.0": 5204,
+        "0.0": 1202,
+        "-1.0": 1668
+      },
+      "Mercedes-Benz": {
+        "1.0": 6345,
+        "0.0": 1681,
+        "-1.0": 2573
+      }
+    },
+    "AspectsCounts": {
+            "comfort": {
+              "2022": 1,
+              "2023": 3,
+              "2024": 16,
+              "2025": 0
+            },
+            "fuel efficiency": {
+              "2022": 6,
+              "2023": 26,
+              "2024": 82,
+              "2025": 0
+            },
+            "performance": {
+              "2022": 43,
+              "2023": 139,
+              "2024": 281,
+              "2025": 1
+            },
+            "quality": {
+              "2022": 4,
+              "2023": 13,
+              "2024": 27,
+              "2025": 0
+            },
+            "safety": {
+              "2022": 19,
+              "2023": 151,
+              "2024": 432,
+              "2025": 3
+            }
+    },
+    "brandSentimentsCounts": {
+      "Audi": {
+        "1.0": 182,
+        "0.0": 29,
+        "-1.0": 17
+      },
+      "BMW": {
+        "1.0": 321,
+        "0.0": 108,
+        "-1.0": 91
+      },
+      "INFINITI": {
+        "1.0": 0,
+        "0.0": 0,
+        "-1.0": 2
+      },
+      "Lexus": {
+        "1.0": 18,
+        "0.0": 2,
+        "-1.0": 12
+      },
+      "Mercedes-Benz": {
+        "1.0": 390,
+        "0.0": 26,
+        "-1.0": 36
+      }
+    },
+    "overallBrand": 
+    {"Audi":{"2022":41,"2023":81,"2024":141,"2025":0},"BMW":{"2022":0,"2023":207,"2024":298,"2025":0},"INFINITI":{"2022":7,"2023":2,"2024":0,"2025":0},"Lexus":{"2022":4,"2023":12,"2024":20,"2025":0},"Mercedes-Benz":{"2022":21,"2023":30,"2024":379,"2025":4}
+}
+  }
+
+  

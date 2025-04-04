@@ -1,0 +1,153 @@
+  /* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin-left: 100;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: #F0F4FF;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Car Brand.html Design */
+    /* Styling for car brand containers */
+    .car-brand {
+      display: flex;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .car-brand:hover {
+      transform: scale(1.05); /* Zoom effect on hover */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .car-brand img {
+      width: 220px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .car-brand p {
+      flex: 1;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      transition: color 0.3s ease;
+    }
+
+    .car-brand:hover p {
+      color: #333; /* Change text color on hover */
+    }
+
+    .car-brand h3 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .car-brand:hover h3 {
+      color: #007bff; /* Change header color on hover */
+    }
+
+    /* Overall layout enhancements */
+    .automobile-explanation, .car-history {
+      margin-bottom: 40px;
+    }
+
+    .automobile-explanation h2, .car-history h2 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .automobile-explanation p {
+      font-size: 18px;
+      color: #666;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+
+
+    /* Responsive design for mobile devices */
+    @media (max-width: 768px) {
+      .car-brand {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .car-brand img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 150px;
+      }
+
+      .automobile-explanation p, .car-brand p {
+        font-size: 14px;
+      }
+
+      .automobile-explanation h2, .car-history h2 {
+        font-size: 22px;
+      }
+
+      .car-brand h3 {
+        font-size: 20px;
+      }
+    }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+  }
+
+  .sidebar:hover {
+    width: 85px;
+  }
+
+  main {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+  }
+
+  .sidebar.active {
+    visibility: visible;
+    width: 260px;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+
+
+  

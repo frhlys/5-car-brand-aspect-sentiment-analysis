@@ -1,0 +1,434 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e6e8ed;
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .material-icons-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+  }
+  
+  .text-primary {
+    color: #666666;
+  }
+  
+  .text-blue {
+    color: #246dec;
+  }
+  
+  .text-red {
+    color: #cc3c43;
+  }
+  
+  .text-green {
+    color: #367952;
+  }
+  
+  .text-orange {
+    color: #f5b74f;
+  }
+  
+  .font-weight-bold {
+    font-weight: 600;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "sidebar header header header"
+      "sidebar main main main";
+    height: 100vh;
+  }
+  
+  
+  /* ---------- HEADER ---------- */
+  
+  .header {
+    grid-area: header;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+
+
+  
+  
+  /* ---------- MAIN ---------- */
+  
+  .main-container {
+    display: block;
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+  }
+  
+  .main-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-title > p {
+    font-size: 20px;
+  }
+  
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:first-child {
+    border-left: 7px solid #246dec;
+  }
+  
+  .card:nth-child(2) {
+    border-left: 7px solid #f5b74f;
+  }
+  
+  .card:nth-child(3) {
+    border-left: 7px solid #367952;
+  }
+  
+  .card:nth-child(4) {
+    border-left: 7px solid #cc3c43;
+  }
+  
+  .card > span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-inner > p {
+    font-size: 18px;
+  }
+  
+  .card-inner > span {
+    font-size: 35px;
+  }
+  
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .charts-card {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  
+  
+  
+  
+  /* ---------- MEDIA QUERIES ---------- */
+  
+  
+  /* Medium <= 992px */
+  @media screen and (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas:
+        "header"
+        "main";
+    }
+  
+    #sidebar {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: inline;
+    }
+  
+    .sidebar-title > span {
+      display: inline;
+    }
+  }
+  
+  /* Small <= 768px */
+  @media screen and (max-width: 768px) {
+    .main-cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+  
+    .charts {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+  }
+  
+  /* Extra Small <= 576px */
+  @media screen and (max-width: 576px) {
+    .header-left {
+      display: none;
+    }
+  }
+
+  /* ---------- prediction result ---------- */
+
+  /* Center the main content */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+/* Style the title */
+.main-title {
+  font-size: 2.5em; /* Make the title larger */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the form and textarea */
+.text-analyzer form {
+  width: 100%;
+  max-width: 600px; /* Set a maximum width */
+}
+
+.text-analyzer textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 18px; /* Larger text size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow */
+}
+
+/* Style the button */
+.text-analyzer button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px; /* Larger button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.text-analyzer button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the prediction result */
+.prediction-result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e6e8ed;
+  background-image: url('car-bg.jpg'); /* Add your image path here */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-position: center; /* Centers the image in the viewport */
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho");
+:root {
+  --color-dark: #043F2E;
+  --color-light: #C8F169;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-dark);
+  font-family: "Sawarabi Mincho", serif;
+  padding: 10vw;
+  box-sizing: border-box;
+  font-size: max(35px, 6.666vw);
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--color-dark);
+  display: inline;
+  margin: 0.15em 0;
+  line-height: 1.15;
+  text-align: center;
+  outline: none;
+  filter: drop-shadow(2em 0 var(--color-dark)) drop-shadow(-0.25em 0 var(--color-dark)) drop-shadow(0 0.25em 0 var(--color-dark)) drop-shadow(0 -0.25em 0 var(--color-dark));
+  display: inline-block;
+  margin-bottom: calc(-2em * 1.2);
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 400px) {
+  .title {
+    text-align: left;
+    margin-top: 0.45em;
+  }
+}
+.title > span {
+  float: left;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+}
+@media (max-width: 700px) {
+  .title > span {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='7.5' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 15 -7.5' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+  }
+}
+@media (max-width: 400px) {
+  .title > span {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='4' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 8 -4' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+  }
+}
+.title > span:before, .title > span:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.title > span > span {
+  padding: 0.025em 0.25em;
+  background: var(--color-light);
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+  position: relative;
+  z-index: 5;
+}
+.title > span > span:first-child {
+  --float: left;
+}
+.title > span > span:last-child {
+  --float: right;
+}
+.title > span > span:first-child, .title > span > span:last-child {
+  float: var(--float);
+  padding: 0.15em 0.25em;
+}
+.title > span > span:first-child:after, .title > span > span:last-child:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 400px) {
+  .title > span > span:first-child, .title > span > span:last-child {
+    --float: unset;
+    padding: 0.025em 0.25em;
+  }
+  .title > span > span:first-child:after, .title > span > span:last-child:after {
+    content: none;
+  }
+}
+.title > span > span ~ span {
+  z-index: 4;
+}
+.title > span > span ~ span ~ span {
+  z-index: 3;
+}
+.title > span > span ~ span ~ span ~ span {
+  z-index: 2;
+}
+
+.image {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+  max-width: 100%;
+  width: min(8em, 100%);
+  float: left;
+  margin-left: 0;
+}
+@media (max-width: 700px) {
+  .image {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='7.5' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 15 -7.5' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+  }
+}
+@media (max-width: 400px) {
+  .image {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='4' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 8 -4' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+  }
+}
+@media (max-width: 400px) {
+  .image {
+    order: -1;
+  }
+}
