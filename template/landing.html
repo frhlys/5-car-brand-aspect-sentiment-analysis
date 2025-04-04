@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Sentiment Website</title>
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      /* General Styles */
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ), url('/static/img/car-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        overflow: hidden;
+      }
+
+      /* Logo Styling */
+      .logo-container {
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      .logo-container img {
+        width: 600px; /* Adjust logo size */
+        height:auto;
+        max-width: 100%;
+        transition: transform 0.3s ease;
+      }
+      
+
+      .logo-container img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Main Container */
+      .main-container {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 40px 30px;
+        border-radius: 15px;
+        max-width: 800px;
+        width: 100%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp 1s ease 0.5s forwards;
+        opacity: 0;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Title Section */
+      .main-title {
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      .main-description {
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: #dcdcdc;
+        line-height: 1.5;
+      }
+
+      /* Get Started Button */
+      .main-content button {
+        padding: 12px 35px;
+        font-size: 1.1em;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #0078ff;
+        color: #ffffff;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 15px rgba(0, 120, 255, 0.5);
+      }
+
+      .main-content button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 86, 179, 0.7);
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #0078ff;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0056b3;
+      }
+    </style>
+</head>
+<body>
+    <!-- Logo Outside the Box -->
+    <div class="logo-container">
+        <img src="/static/img/sentiment_car_logo.png" alt="Automobile Sentiment Logo">
+    </div>
+
+    <!-- Main Content Box -->
+    <div class="main-container">
+      <div class="main-title">CLASSIFYING AND VISUALIZING SENTIMENTS OF AUTOMOBILE BRAND REVIEWS USING NAÏVE BAYES</div>
+
+      <div class="main-description">
+        Discover how consumers feel about different car brands based on five car brand reviews. 
+        Analyze sentiments related to price, performance, quality, safety, comfort, fuel efficiency to make informed 
+        decisions before purchasing your next vehicle.
+      </div>
+     
+      <div class="main-content">
+        <button onclick="startAnalysis()">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      function startAnalysis() {
+        window.location.href = '/index';
+        alert('Redirecting to Dashboard Page...');
+      }
+    </script>
+</body>
+</html>
