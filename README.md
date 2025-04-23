@@ -2,15 +2,6 @@
 
 Classifying and Visualizing Sentiments of Automobile Brand Reviews using Naive Bayes
 
-
-
-########################################
-#                                      #
-#              S E T U P               #
-#                                      #
-########################################
-
-
 How to Use / Setup / Link the System / Prototype / Database / Raw Data
 
 1. Download and Extract
