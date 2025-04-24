@@ -32,6 +32,7 @@ Open index.html in a web browser to view the UI/UX design.
 The dataset is located in data_pp_lda_sentiment.csv.
 It includes car brand names, reviews, ratings, and date
 Users can update or replace the dataset for further analysis.
+Dataset obtain from: https://www.kaggle.com/datasets/ashisparida/reviews-of-5-car-brands
 
 Last Updated: February 2025
 
