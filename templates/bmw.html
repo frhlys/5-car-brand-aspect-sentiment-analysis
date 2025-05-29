@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW</title>
+
+   <!-- Montserrat Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <!-- Material Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- Google Font for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="/static/css/side.css">
+  <link rel="stylesheet" href="/static/css/car.css">
+
+  
+  <!-- ApexCharts Library -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="static/img/logo.jpg" alt="Logo" style="width: 50px;">
+      <h2>Car Sentiment</h2>
+    </div>
+    
+    <ul class="sidebar-links">
+      <h4>
+        <span>Main Menu</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li><a href="/index"><span class="material-symbols-outlined">dashboard</span>Dashboard</a></li>
+      <li><a href="/carbrand"><span class="material-symbols-outlined">directions_car</span>Car Brands</a></li>
+      
+      <h4>
+        <span>Brands</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="/audi">
+            <span class="material-symbols-outlined">counter_0</span>Audi</a>
+      </li>
+      <li>
+        <a href="/bmw">
+            <span class="material-symbols-outlined">counter_1</span>BMW</a>
+      </li>
+      <li>
+        <a href="/mercedes">
+            <span class="material-symbols-outlined">counter_2</span>Mercedes</a>
+      </li>
+      <li>
+        <a href="/lexus">
+            <span class="material-symbols-outlined">counter_3</span>Lexus</a>
+      </li>
+      <li>
+        <a href="/infiniti">
+            <span class="material-symbols-outlined">counter_4</span>INFINITI</a>
+      </li>
+
+      <h4>
+        <span>Analysis</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li><a href="/comparison"><span class="material-symbols-outlined">settings</span>Competitive Analysis</a></li>
+      <li><a href="/text"><span class="material-symbols-outlined">short_text</span>Text Analyzer</a></li>
+
+    </ul>
+  </aside>
+  <!-- End Sidebar -->
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <section class="automobile-explanation">
+      <h2>BMW</h2>
+    </section>
+
+          <div class="main-cards">
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">TOTAL SENTIMENTS</p>
+                <span class="material-icons-outlined text-blue">stars</span>
+              </div>
+              <span class="text-primary font-weight-bold">10585</span>
+            </div>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">POSITIVE SENTIMENTS</p>
+                <span class="material-icons-outlined text-orange">sentiment_very_satisfied</span>
+              </div>
+              <span class="text-primary font-weight-bold">6710</span>
+            </div>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">NEUTRAL SENTIMENTS</p>
+                <span class="material-icons-outlined text-green">sentiment_neutral</span>
+              </div>
+              <span class="text-primary font-weight-bold">1442</span>
+            </div>
+  
+            <div class="card">
+              <div class="card-inner">
+                <p class="text-primary">NEGATIVE SENTIMENTS</p>
+                <span class="material-icons-outlined text-red">sentiment_very_dissatisfied</span>
+              </div>
+              <span class="text-primary font-weight-bold">2433</span>
+            </div>
+          </div>
+
+    <!-- Charts -->
+    <div id="charts" style="text-align: center;">
+      <div id="donut-chart" style="width: 50%; display: inline-block;"></div>
+     
+          <!-- Word Cloud and Select Sentiment -->
+          <div id="wordCloudContainer" style="text-align: center; margin-top: 20px;">
+            <h3>Word Cloud</h3>
+            <div class="wordcloud-content">
+              <div class="wordcloud-dropdown">
+                <label for="topics">Select a Sentiment:</label>
+                <select id="topics">
+                  <option value="/static/word/bmw_positive_wordcloud.png">Positive Sentiment</option>
+                  <option value="/static/word/bmw_neutral_wordcloud.png">Neutral Sentiment</option>
+                  <option value="/static/word/bmw_negative_wordcloud.png">Negative Sentiment</option>
+                </select>
+              </div>
+              <img id="wordCloudImage" src="/static/word/bmw_positive_wordcloud.png" alt="Word Cloud">
+            </div>
+          </div>
+        </div>   
+   
+<div id="charts" style="text-align: center;">
+  <div id="bar" style="width: 50%; display: inline-block;"></div>
+  <div id="bar-chart" style="width: 50%; display: inline-block;"></div>
+</div>
+
+<div id="charts" style="text-align: center;">
+  <div id="aspect-chart" style="width: 50%; display: inline-block;"></div>
+  <div id="sentaspect" style="width: 50%; display: inline-block;"></div>
+</div>
+
+  <!-- Total mentions-->
+  <!-- Total mentions<div id="sentiment" style="width: 100%; height: 400px;"></div> <div id="aspect" style="width: 100%; height: 400px;"></div> -->
+  
+  </main>
+         <!-- Scripts -->
+      <!-- ApexCharts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.js"></script>
+      <!-- Custom JS -->
+      <script src="/static/js/bmw.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automobile Sentiment Analysis</title>
+  <!-- Linking Google Font Link For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="side.css" />
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="static/img/carlogo1.png" alt="logo" />
+      <h2>Car Sentiments</h2>
+    </div>
+    <ul class="sidebar-links">
+      <h4>
+        <span>Main Menu</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="/index">
+          <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
+      </li>
+      <li>
+        <a href="/carbrand"><span class="material-symbols-outlined"> directions_car </span>Car Brands</a>
+      </li>
+      <h4>
+        <span>Brands</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="/audi">
+            <img src="/static/icon/audi2.png" alt="Audi Logo" style="width:40px; height:20px; vertical-align:middle; margin-right:10px;">
+            <span class=""></span>Audi</a>
+      </li>
+      <li>
+        <a href="#">
+            <img src="/static/icon/bmw2.png" alt="bmw Logo" style="width:40px; height:20px;">
+            <span class=""></span>BMW</a>
+      </li>
+      <li>
+        <a href="#">
+            <img src="/static/icon/merc2.png" alt="merc Logo" style="width:40px; height:20px; vertical-align:middle; margin-right:10px;">
+            <span class=""></span>Mercedes</a>
+      </li>
+      <li>
+        <a href="#">
+            <img src="/static/icon/lexus2.png" alt="lexus Logo" style="width:40px; height:20px; vertical-align:middle; margin-right:10px;">
+            <span class="material-symbols-outlined"></span>Lexus</a>
+      </li>
+      <li>
+        <a href="#">
+            <img src="/static/icon/infiniti2.png" alt="infiniti Logo" style="width:40px; height:20px; vertical-align:middle; margin-right:10px;">
+            <span class="material-symbols-outlined"></span>Infiniti</a>
+      </li>
+      <h4>
+        <span>Analysis</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> short_text </span>Text Analyzer</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> settings </span>KIV</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> logout </span>Logout</a>
+      </li>
+    </ul>
+    <div class="user-account">
+      <div class="user-profile">
+        <img src="/static/img/me.jpg" alt="Profile Image" />
+        <div class="user-detail">
+          <h3>Farah Alysa</h3>
+          <span>Developer</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">CLASSIFYING AND VISUALIZING SENTIMENTS OF AUTOMOBILE BRAND REVIEWS USING NAÏVE BAYES</p>
+        </div>
+      
+        <!-- Add Image and Buttons -->
+        <div class="main-content">
+          <img src="/static/img/bmw2.jpeg" alt="Car Brands" class="main-image">
+          
+          <!-- Start Button -->
+          <button class="start-button" onclick="startAnalysis()">Start</button>
+          
+          <!-- Exit Button -->
+          <button class="exit-button" onclick="exitPage()">Exit</button>
+        </div>
+      
+      </main>
+</body>
+</html>
+
+
+// Aspect Sentiment chart configuration
+const aspectOptions = {
+  series: [
+    { name: 'Net Profit', data: [44, 55, 57, 56, 61, 58, 63, 60, 66] },
+    { name: 'Revenue', data: [76, 85, 101, 98, 87, 105, 91, 114, 94] },
+    { name: 'Free Cash Flow', data: [35, 41, 36, 26, 45, 48, 52, 53, 41] }
+  ],
+  chart: { type: 'bar', height: 350 },
+  plotOptions: { bar: { horizontal: false, columnWidth: '55%', borderRadius: 5, borderRadiusApplication: 'end' } },
+  dataLabels: { enabled: false },
+  stroke: { show: true, width: 2, colors: ['transparent'] },
+  xaxis: { categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'] },
+  yaxis: { title: { text: '$ (thousands)' } },
+  fill: { opacity: 1 },
+  tooltip: { y: { formatter: (val) => `$ ${val} thousands` } }
+};
+new ApexCharts(document.querySelector("#sentaspect-chart"), aspectOptions).render();
