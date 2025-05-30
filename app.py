@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import json
-from textblob import TextBlob
+
 
 app = Flask(__name__)
 
